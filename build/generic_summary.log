@@ -1,0 +1,36 @@
+yosys -s scripts/synth.ys > build/synthesis.log
+
+        +----------Count including submodules.
+        | 
+     6116 wires
+     8210 wire bits
+      195 public wires
+     1838 public wire bits
+      128 ports
+     1195 port bits
+        - memories
+        - memory bits
+        - processes
+     6795 cells
+      113   $_ANDNOT_
+     1124   $_AND_
+      112   $_DFFE_PP_
+      529   $_MUX_
+     2160   $_NAND_
+       64   $_NOR_
+       57   $_NOT_
+      100   $_ORNOT_
+      233   $_OR_
+      144   $_SDFFCE_PN0P_
+      338   $_SDFFE_PP0P_
+        6   $_SDFF_PP0_
+      440   $_XNOR_
+     1375   $_XOR_
+        9 submodules
+        9   $paramod$4e0332c07c9363f4b23344edbd0c9ba22bb949c4\pe
+
+8. Executing JSON backend.
+
+End of script. Logfile hash: ac5e2f30e5, time: 0.69s, user: 0.26s, system: 0.08s, MEM: 38.44 MB peak
+Yosys 0.70+post (git sha1 0c11ea098be065e585a90a06e7b7da49936cf231)
+Time spent: 89% 1x abc (2 sec), 1% 1x techmap (0 sec), ...
