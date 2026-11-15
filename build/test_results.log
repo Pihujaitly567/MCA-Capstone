@@ -1,0 +1,30 @@
+iverilog -g2012 -Wall -s tb_pe -o build/pe rtl/mac.v rtl/pe.v rtl/systolic_array.v tb/tb_pe.v
+vvp build/pe
+VCD info: dumpfile build/pe.vcd opened for output.
+PASS PE: signed MAC, extremes, forwarding, hold, clear, reset
+tb/tb_pe.v:22: $finish called at 46000 (1ps)
+VCD info: dumpfile build/array.vcd opened for output.
+       1 
+       1 
+PASS array N=1: 27 jobs, latency=1 cycles
+tb/tb_array.v:77: $finish called at 1636000 (1ps)
+VCD info: dumpfile build/array.vcd opened for output.
+      30       24       18 
+      84       69       54 
+     138      114       90 
+      30       24       18 
+      84       69       54 
+     138      114       90 
+PASS array N=3: 27 jobs, latency=7 cycles
+tb/tb_array.v:77: $finish called at 7416000 (1ps)
+VCD info: dumpfile build/array.vcd opened for output.
+      80       70       60       50 
+     240      214      188      162 
+     400      358      316      274 
+     560      502      444      386 
+      80       70       60       50 
+     240      214      188      162 
+     400      358      316      274 
+     560      502      444      386 
+PASS array N=4: 27 jobs, latency=10 cycles
+tb/tb_array.v:77: $finish called at 11866000 (1ps)

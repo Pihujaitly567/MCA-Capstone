@@ -1,0 +1,41 @@
+yosys -s scripts/synth_xilinx.ys > build/synthesis_xilinx.log
+=== design hierarchy ===
+
+        +----------Count including submodules.
+        | 
+     1127 systolic_array
+       35 $paramod$4e0332c07c9363f4b23344edbd0c9ba22bb949c4\pe
+        1   $paramod$4e0332c07c9363f4b23344edbd0c9ba22bb949c4\mac
+
+        +----------Count including submodules.
+        | 
+     2064 wires
+     4047 wire bits
+      181 public wires
+     1733 public wire bits
+      128 ports
+     1195 port bits
+        - memories
+        - memory bits
+        - processes
+     1127 cells
+        1   BUFG
+       28   CARRY4
+        9   DSP48E1
+      544   FDRE
+       77   IBUF
+        6   INV
+       26   LUT2
+      102   LUT3
+       36   LUT4
+       32   LUT5
+      102   LUT6
+      164   OBUF
+        9 submodules
+        9   $paramod$4e0332c07c9363f4b23344edbd0c9ba22bb949c4\pe
+
+8. Executing JSON backend.
+
+End of script. Logfile hash: 88ea9f802e, time: 2.79s, user: 2.44s, system: 0.08s, MEM: 184.36 MB peak
+Yosys 0.70+post (git sha1 0c11ea098be065e585a90a06e7b7da49936cf231)
+Time spent: 60% 29x read_verilog (1 sec), 9% 3x abc9_exe (0 sec), ...

@@ -1,0 +1,11 @@
+iverilog -g2012 -s tb_array -o build/array_3 rtl/mac.v rtl/pe.v rtl/systolic_array.v tb/tb_array.v
+vvp build/array_3
+VCD info: dumpfile build/array.vcd opened for output.
+      30       24       18 
+      84       69       54 
+     138      114       90 
+      30       24       18 
+      84       69       54 
+     138      114       90 
+PASS array N=3: 27 jobs, latency=7 cycles
+tb/tb_array.v:77: $finish called at 7416000 (1ps)
