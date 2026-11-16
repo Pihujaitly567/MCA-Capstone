@@ -25,3 +25,5 @@ PASS array N=3: 27 jobs, latency=7 cycles
 ```
 
 Files: `rtl/mac.v`, `rtl/pe.v`, `rtl/systolic_array.v`; tests in `tb/`; synthesis flows in `scripts/`. Generated reports and waveforms appear in `build/`.
+
+Video link: https://drive.google.com/file/d/1ie0hjAKfvPVRXL3KCM5HGUGDSfp7DLX-/view?usp=sharing
